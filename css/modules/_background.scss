@@ -1,0 +1,60 @@
+@import "color";
+
+.bg-image {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image2 {
+  background-image: url(/img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-yellow {
+  background: $yellow;
+}
+
+.bg-green {
+  background: $green;
+}
+
+.bg-orange {
+  background: $orange;
+}
+
+.bg-darkblue {
+  background: $darkblue;
+}
+
+.bg-halfblack {
+  background: $halfblack;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.halfwhite {
+  color: $halfwhite;
+}
+
+.halfblack {
+  color: $halfblack;
+}
+
+.quarterwhite {
+  color: $quarterwhite;
+}
+
+
+@media screen and(max-width:1024px) {}
+
+@media screen and(max-width:414px) {}

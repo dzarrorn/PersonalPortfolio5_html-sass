@@ -1,0 +1,138 @@
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/background";
+@import "modules/button";
+@import "modules/shadow";
+@import "modules/border";
+@import "modules/color";
+
+// header
+header {
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+
+    .navbar {
+        a {
+            color: white;
+            padding: 10px 20px;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+
+        .button {
+            border: 1px solid white;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
+
+.float {
+    animation: floating 2s linear infinite;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-1.5rem);
+    }
+}
+
+#burger {
+    display: none;
+}
+
+// service
+.card {
+    padding: 43px 43px 43px 43px;
+    background: $halfwhite;
+    border-radius: 25px;
+
+    i {
+        text-align: center;
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background: white;
+        transform: scale(1.1);
+    }
+}
+
+// contact
+.hire {
+    padding: 1rem 2rem;
+    border: 1px solid white;
+}
+
+.share {
+    a {
+        color: white;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        background: $halfwhite;
+        border-radius: 50%;
+        margin-right: .5rem;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and(max-width:1024px) {}
+
+@media screen and(max-width:768px) {
+
+    // header
+    #burger {
+        display: block;
+    }
+
+    .navbar {
+        background: $halfblack;
+        position: absolute;
+        top: 99.2%;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+
+        a {
+            text-align: center;
+            display: block;
+            margin-top: 7.5rem;
+        }
+
+        .button {
+            margin: 7.5rem 25%;
+        }
+
+        &.active {
+            right: 0;
+        }
+    }
+}
+
+@media screen and(max-width:414px) {}
