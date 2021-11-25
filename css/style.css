@@ -3514,6 +3514,13 @@ header .navbar .button:hover {
 .hire {
   padding: 1rem 2rem;
   border: 1px solid white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hire:hover {
+  background: white;
+  color: black;
 }
 
 .share a {
